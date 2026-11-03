@@ -1,29 +1,35 @@
-# Analisis Penjualan Retail 2025
+# Portofolio Data Analyst — Zulfa Ghina Dhiya Shaba
 
-Proyek analisis end-to-end: membuat data transaksi, membersihkannya, menghitung KPI, dan memvisualisasikan temuan.
+Halo! Saya Zulfa Ghina Dhiya Shaba, mahasiswa Semester 5 yang sedang mencari kesempatan **magang sebagai Data Analyst**. Repo ini berisi website portofolio dan proyek-proyek analisis data saya.
 
-> **Catatan:** data pada proyek ini **sintetis** (dibuat oleh `analysis.py` dengan seed tetap) agar hasilnya bisa direproduksi oleh siapa pun. Ganti dengan data asli untuk analisis nyata.
+🌐 **Website:** https://zulfaghina86-sys.github.io/career/
+📧 **Kontak:** [zulfaghina86@gmail.com](mailto:zulfaghina86@gmail.com) · [LinkedIn](https://www.linkedin.com/in/zulfa-ghina-dhiya-shaba-065923387)
 
-## Pertanyaan bisnis
-1. Berapa total omzet dan bagaimana tren bulanannya?
-2. Kategori dan kota mana yang paling berkontribusi?
-3. Seberapa bersih data mentahnya?
+## Proyek
+| Proyek | Ringkasan | Tools |
+|---|---|---|
+| [Analisis Penjualan Retail 2025](projects/01-analisis-penjualan-retail) | Cleaning data, KPI, dan visualisasi tren omzet per kategori dan kota | Python, pandas, Matplotlib |
 
-## Temuan utama
-- Total omzet **Rp3,46 miliar** dari 3.000 transaksi, rata-rata nilai order sekitar Rp1,15 juta.
-- **Elektronik** menyumbang sekitar 66% omzet meski bukan kategori dengan transaksi terbanyak.
-- **Jakarta** adalah kota terbesar (sekitar 33% omzet).
-- Pembersihan data: 30 baris duplikat dihapus, 39 nilai kota kosong diberi label "Tidak Diketahui", dan penulisan kota diseragamkan.
+## Skill
+- **Analisis & cleaning data:** Python (pandas, NumPy), Excel
+- **Query:** SQL (SELECT, JOIN, GROUP BY, window function)
+- **Visualisasi:** Matplotlib, Power BI / Tableau, Looker Studio
+- **Lainnya:** Git/GitHub, storytelling dengan data
 
-![Omzet bulanan](output/omzet_bulanan.png)
-![Omzet per kategori dan kota](output/omzet_kategori_kota.png)
-
-## Cara menjalankan
-```bash
-pip install -r ../../requirements.txt
-python analysis.py
+## Struktur repo
 ```
-Hasil tersimpan di folder `data/` (CSV mentah dan bersih) dan `output/` (grafik dan `ringkasan.md`).
+├── index.html, style.css       # website portofolio (GitHub Pages)
+├── omzet_bulanan.png           # gambar untuk website
+├── projects/
+│   └── 01-analisis-penjualan-retail/
+├── requirements.txt
+└── README.md
+```
 
-## Tools
-Python, pandas, NumPy, Matplotlib
+## Menjalankan proyek
+```bash
+git clone https://github.com/zulfaghina86-sys/career.git
+cd career
+pip install -r requirements.txt
+python projects/01-analisis-penjualan-retail/analysis.py
+```
