@@ -1,9 +1,9 @@
-# Portofolio Data Analyst — Nama Anda
+# Portofolio Data Analyst — Zulfa Ghina Dhiya Shaba
 
-Halo! Saya **Nama Anda**, mahasiswa/fresh graduate yang sedang mencari kesempatan **magang sebagai Data Analyst**. Repo ini berisi website portofolio dan proyek-proyek analisis data saya.
+Halo! Saya Zulfa Ghina Dhiya Shaba, mahasiswa Semester 5 yang sedang mencari kesempatan **magang sebagai Data Analyst**. Repo ini berisi website portofolio dan proyek-proyek analisis data saya.
 
 🌐 **Website:** `https://USERNAME.github.io/NAMA-REPO/`
-📧 **Kontak:** email@anda.com · [LinkedIn](https://linkedin.com/in/username)
+📧 **Kontak:** zulfaghina86@gmail.com· [LinkedIn]([https://linkedin.com/in/username](https://www.linkedin.com/in/zulfa-ghina-dhiya-shaba-065923387?utm_source=share_via&utm_content=profile&utm_medium=member_ios))
 
 ## Proyek
 | Proyek | Ringkasan | Tools |
