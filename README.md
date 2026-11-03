@@ -1,35 +1,29 @@
-# Portofolio Data Analyst — Zulfa Ghina Dhiya Shaba
+# Analisis Penjualan Retail 2025
 
-Halo! Saya Zulfa Ghina Dhiya Shaba, mahasiswa Semester 5 yang sedang mencari kesempatan **magang sebagai Data Analyst**. Repo ini berisi website portofolio dan proyek-proyek analisis data saya.
+Proyek analisis end-to-end: membuat data transaksi, membersihkannya, menghitung KPI, dan memvisualisasikan temuan.
 
-🌐 **Website:** `https://USERNAME.github.io/NAMA-REPO/`
-📧 **Kontak:** zulfaghina86@gmail.com· [LinkedIn]([https://linkedin.com/in/username](https://www.linkedin.com/in/zulfa-ghina-dhiya-shaba-065923387?utm_source=share_via&utm_content=profile&utm_medium=member_ios))
+> **Catatan:** data pada proyek ini **sintetis** (dibuat oleh `analysis.py` dengan seed tetap) agar hasilnya bisa direproduksi oleh siapa pun. Ganti dengan data asli untuk analisis nyata.
 
-## Proyek
-| Proyek | Ringkasan | Tools |
-|---|---|---|
-| [Analisis Penjualan Retail 2025](projects/01-analisis-penjualan-retail) | Cleaning data, KPI, dan visualisasi tren omzet per kategori dan kota | Python, pandas, Matplotlib |
+## Pertanyaan bisnis
+1. Berapa total omzet dan bagaimana tren bulanannya?
+2. Kategori dan kota mana yang paling berkontribusi?
+3. Seberapa bersih data mentahnya?
 
-## Skill
-- **Analisis & cleaning data:** Python (pandas, NumPy), Excel
-- **Query:** SQL (SELECT, JOIN, GROUP BY, window function)
-- **Visualisasi:** Matplotlib, Power BI / Tableau, Looker Studio
-- **Lainnya:** Git/GitHub, storytelling dengan data
+## Temuan utama
+- Total omzet **Rp3,46 miliar** dari 3.000 transaksi, rata-rata nilai order sekitar Rp1,15 juta.
+- **Elektronik** menyumbang sekitar 66% omzet meski bukan kategori dengan transaksi terbanyak.
+- **Jakarta** adalah kota terbesar (sekitar 33% omzet).
+- Pembersihan data: 30 baris duplikat dihapus, 39 nilai kota kosong diberi label "Tidak Diketahui", dan penulisan kota diseragamkan.
 
-## Struktur repo
-```
-├── index.html, style.css       # website portofolio (GitHub Pages)
-├── assets/                     # gambar untuk website
-├── projects/
-│   └── 01-analisis-penjualan-retail/
-├── requirements.txt
-└── README.md
-```
+![Omzet bulanan](output/omzet_bulanan.png)
+![Omzet per kategori dan kota](output/omzet_kategori_kota.png)
 
-## Menjalankan proyek
+## Cara menjalankan
 ```bash
-git clone https://github.com/USERNAME/NAMA-REPO.git
-cd NAMA-REPO
-pip install -r requirements.txt
-python projects/01-analisis-penjualan-retail/analysis.py
+pip install -r ../../requirements.txt
+python analysis.py
 ```
+Hasil tersimpan di folder `data/` (CSV mentah dan bersih) dan `output/` (grafik dan `ringkasan.md`).
+
+## Tools
+Python, pandas, NumPy, Matplotlib
