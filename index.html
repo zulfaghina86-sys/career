@@ -4,55 +4,121 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zulfa Ghina Dhiya Shaba — Portofolio Data Analyst</title>
-  <meta name="description" content="Portofolio data analyst untuk melamar magang: proyek, skill, dan kontak.">
+  <meta name="description" content="Portofolio Zulfa Ghina Dhiya Shaba, mahasiswa semester 5 yang mencari magang sebagai data analyst.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <nav>
+  <a class="skip" href="#proyek">Langsung ke proyek</a>
+
+  <header class="top">
+    <a class="brand" href="#atas">Zulfa Ghina</a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
       <a href="#proyek">Proyek</a>
       <a href="#skill">Skill</a>
       <a href="#kontak">Kontak</a>
     </nav>
-    <p class="eyebrow">Mencari magang Data Analyst</p>
-    <h1>Halo, saya Zulfa Ghina Dhiya Shaba.</h1>
-    <p class="lead">Saya mengubah data mentah menjadi temuan yang bisa dipakai mengambil keputusan, mulai dari pembersihan data sampai visualisasi dan rekomendasi.</p>
-    <a class="btn" href="#proyek">Lihat proyek</a>
   </header>
 
-  <main>
-    <section id="proyek">
+  <main id="atas">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="status"><span class="dot" aria-hidden="true"></span>Terbuka untuk magang data analyst</p>
+          <h1>Zulfa Ghina<br>Dhiya Shaba</h1>
+          <p class="lead">Mahasiswa semester 5 yang suka membersihkan data berantakan, mencari polanya, dan menjelaskannya dengan grafik yang mudah dipahami.</p>
+          <div class="actions">
+            <a class="btn primary" href="#proyek">Lihat proyek</a>
+            <a class="btn" href="#kontak">Hubungi saya</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="foto.jpg" width="640" height="800" alt="Foto Zulfa Ghina Dhiya Shaba">
+        </figure>
+      </div>
+
+      <div class="trend" role="img" aria-label="Grafik omzet bulanan 2025 dari proyek analisis penjualan retail">
+        <svg viewBox="0 0 1200 190" preserveAspectRatio="none" aria-hidden="true">
+          <path class="area" d="M0 62 Q0 62 55 75 Q109 89 164 80 Q218 70 273 63 Q327 56 382 90 Q436 125 491 96 Q545 68 600 68 Q655 68 709 43 Q764 18 818 75 Q873 132 927 81 Q982 30 1036 41 Q1091 52 1145 42 T1200 31 L1200 190 L0 190 Z"/>
+          <path class="line" pathLength="1" d="M0 62 Q0 62 55 75 Q109 89 164 80 Q218 70 273 63 Q327 56 382 90 Q436 125 491 96 Q545 68 600 68 Q655 68 709 43 Q764 18 818 75 Q873 132 927 81 Q982 30 1036 41 Q1091 52 1145 42 T1200 31"/>
+        </svg>
+        <p class="trend-note">Omzet bulanan 2025, dari proyek analisis penjualan retail di bawah.</p>
+      </div>
+    </section>
+
+    <section id="tentang" class="block">
+      <h2>Tentang saya</h2>
+      <div class="about">
+        <p>Saya sedang mencari kesempatan magang sebagai data analyst. Saya belajar menangani data dari awal: memeriksa kualitasnya, membersihkannya, menghitung metrik yang penting, lalu menyampaikan temuannya dalam bahasa yang bisa dipakai tim non-teknis.</p>
+        <dl class="facts">
+          <div><dt>Status</dt><dd>Mahasiswa semester 5</dd></div>
+          <div><dt>Mencari</dt><dd>Magang data analyst</dd></div>
+          <div><dt>Alat utama</dt><dd>Python, SQL, Excel</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="proyek" class="block">
       <h2>Proyek</h2>
-      <article class="card">
-        <img src="omzet_bulanan.png" alt="Grafik omzet bulanan 2025">
-        <div>
-          <h3>Analisis Penjualan Retail 2025</h3>
-          <p>Membersihkan 3.000 transaksi (duplikat, nilai kosong, format tidak konsisten), menghitung KPI, dan menganalisis omzet per kategori dan kota. Temuan: Elektronik menyumbang sekitar 66% omzet dan Jakarta kota terbesar.</p>
-          <p class="tags"><span>Python</span><span>pandas</span><span>Matplotlib</span></p>
-          <a href="https://github.com/zulfaghina86-sys/career/tree/main/projects/01-analisis-penjualan-retail">Lihat kode di GitHub →</a>
+
+      <article class="project featured">
+        <img src="omzet_bulanan.png" alt="Grafik garis omzet bulanan sepanjang 2025" loading="lazy">
+        <div class="project-body">
+          <h3>Analisis penjualan retail 2025</h3>
+          <p>Membersihkan 3.000 transaksi (duplikat, nilai kosong, penulisan kota yang tidak seragam), lalu menghitung KPI dan membandingkan omzet per kategori dan kota.</p>
+          <p class="finding">Elektronik menyumbang sekitar 66% omzet, dan Jakarta adalah kota terbesar dengan sekitar 33%.</p>
+          <p class="note">Data sintetis, dibuat dengan skrip agar hasilnya bisa direproduksi.</p>
+          <ul class="chips"><li>Python</li><li>pandas</li><li>Matplotlib</li></ul>
+          <a class="link" href="https://github.com/zulfaghina86-sys/career/tree/main/projects/01-analisis-penjualan-retail">Buka kode di GitHub</a>
+        </div>
+      </article>
+
+      <article class="project compact">
+        <div class="project-body">
+          <h3>Analisis penjualan e-commerce dengan SQL</h3>
+          <p>Query SQL untuk menjawab pertanyaan bisnis dari data penjualan e-commerce.</p>
+          <ul class="chips"><li>SQL</li></ul>
+          <a class="link" href="https://github.com/zulfaghina86-sys/ecommerce-sales-analysis-sql">Buka repositori</a>
         </div>
       </article>
     </section>
 
-    <section id="skill">
+    <section id="skill" class="block">
       <h2>Skill</h2>
-      <ul class="grid">
-        <li><strong>Analisis data</strong>Python, pandas, Excel</li>
-        <li><strong>Query</strong>SQL: JOIN, GROUP BY, window function</li>
-        <li><strong>Visualisasi</strong>Matplotlib, Power BI / Tableau</li>
-        <li><strong>Komunikasi</strong>Storytelling dan laporan ringkas</li>
-      </ul>
+      <div class="skills">
+        <div>
+          <h3>Mengolah data</h3>
+          <ul><li>Python</li><li>pandas</li><li>NumPy</li><li>Excel</li></ul>
+        </div>
+        <div>
+          <h3>Mengambil data</h3>
+          <ul><li>SQL</li><li>JOIN dan GROUP BY</li></ul>
+        </div>
+        <div>
+          <h3>Menyajikan temuan</h3>
+          <ul><li>Matplotlib</li><li>Ringkasan temuan</li><li>Storytelling dengan data</li></ul>
+        </div>
+        <div>
+          <h3>Bekerja</h3>
+          <ul><li>Git dan GitHub</li><li>Dokumentasi proyek</li></ul>
+        </div>
+      </div>
     </section>
 
-    <section id="kontak">
-      <h2>Kontak</h2>
-      <p>Terbuka untuk kesempatan magang. Hubungi saya di
-        <a href="mailto:zulfaghina86@gmail.com">zulfaghina86@gmail.com</a>,
-        <a href="https://www.linkedin.com/in/zulfa-ghina-dhiya-shaba-065923387">LinkedIn</a>, atau
-        <a href="https://github.com/zulfaghina86-sys">GitHub</a>.</p>
+    <section id="kontak" class="block contact">
+      <h2>Mari berbicara</h2>
+      <p>Kalau ada lowongan magang data analyst yang cocok, kirim pesan ke email saya.</p>
+      <a class="email" href="mailto:zulfaghina86@gmail.com">zulfaghina86@gmail.com</a>
+      <div class="actions">
+        <a class="btn primary" href="https://www.linkedin.com/in/zulfa-ghina-dhiya-shaba-065923387">LinkedIn</a>
+        <a class="btn" href="https://github.com/zulfaghina86-sys">GitHub</a>
+      </div>
     </section>
   </main>
 
-  <footer>© 2026 Zulfa Ghina Dhiya Shaba</footer>
+  <footer class="foot">© 2026 Zulfa Ghina Dhiya Shaba</footer>
 </body>
 </html>
